@@ -1,11 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Reviews | LUXEWEAR</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#ff416c,#ff4b2b);
+    padding:30px 10%;
+    text-align:center;
+}
+header h1{
+    font-size:36px;
+    font-weight:700;
+}
+header p{
+    font-size:16px;
+    opacity:0.9;
+}
+
+/* Reviews Section */
+.reviews{
+    padding:60px 10%;
+    background:#111827;
+}
+
+.reviews h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:50px;
+    color:#facc15;
+}
+
+/* Review Cards */
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.review-card{
+    background:#1f2937;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.review-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(255,65,108,0.4);
+}
+
+/* User Info */
+.user{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.user img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:2px solid #ff416c;
+    margin-right:15px;
+}
+
+.user h3{
+    font-size:18px;
+}
+
+.user span{
+    font-size:14px;
+    color:#9ca3af;
+}
+
+/* Stars */
+.stars{
+    color:#facc15;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+/* Review Text */
+.review-text{
+    font-size:15px;
+    line-height:1.6;
+    color:#e5e7eb;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    font-size:14px;
+    color:#6b7280;
+}
+</style>
 </head>
+
 <body>
+
+<header>
+    <h1>LUXEWEAR Customer Reviews</h1>
+    <p>Real opinions from our premium fashion customers</p>
+</header>
+
+<section class="reviews">
+    <h2>What Our Customers Say</h2>
+
+    <div class="review-grid">
+
+        <!-- Review 1 -->
+        <div class="review-card">
+            <div class="user">
+                <img src="https://i.pravatar.cc/150?img=12">
+                <div>
+                    <h3>Ali Khan</h3>
+                    <span>Verified Buyer</span>
+                </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+                The quality of fabric is amazing. It feels premium and fits perfectly. 
+                LuxeWear is now my favorite clothing brand.
+            </p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+            <div class="user">
+                <img src="https://i.pravatar.cc/150?img=32">
+                <div>
+                    <h3>Sara Ahmed</h3>
+                    <span>Fashion Blogger</span>
+                </div>
+            </div>
+            <div class="stars">★★★★☆</div>
+            <p class="review-text">
+                Loved the modern design and stitching. Delivery was fast and packaging was premium.
+                Highly recommended for trendy outfits.
+            </p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+            <div class="user">
+                <img src="https://i.pravatar.cc/150?img=5">
+                <div>
+                    <h3>Usman Raza</h3>
+                    <span>Returning Customer</span>
+                </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+                I ordered multiple times and every product exceeded my expectations. 
+                Great customer service and luxury feel.
+            </p>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card">
+            <div class="user">
+                <img src="https://i.pravatar.cc/150?img=44">
+                <div>
+                    <h3>Ayesha Noor</h3>
+                    <span>Model</span>
+                </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+                Stylish, elegant, and comfortable. Perfect for photoshoots and casual wear. 
+                LuxeWear delivers premium fashion vibes.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 LUXEWEAR Fashion Store | Designed by Professional Web Developer
+</footer>
 
 </body>
 </html>
